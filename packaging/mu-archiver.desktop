@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=MU Archiver
+GenericName=Podcast Archiver
+Comment=Archive your Mysterious Universe podcast subscription
+Exec=mu-archiver
+TryExec=mu-archiver
+Icon=mu-archiver
+Terminal=false
+Categories=AudioVideo;Audio;Network;
+Keywords=podcast;mysterious universe;archive;download;
+StartupNotify=true
+StartupWMClass=MU Archiver
+X-KDE-Wayland-AppId=org.muarchiver.MUArchiver
+X-KDE-StartupNotify=true

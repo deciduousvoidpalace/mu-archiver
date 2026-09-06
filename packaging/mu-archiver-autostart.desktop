@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=MU Archiver
+Comment=Keep the Mysterious Universe archive up to date in the background
+Exec=mu-archiver --minimized
+Icon=mu-archiver
+Terminal=false
+X-GNOME-Autostart-enabled=true
+X-KDE-autostart-after=panel

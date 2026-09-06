@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">
+  <channel>
+    <title>MU Plus+ HQ</title>
+    <atom:link href="https://feeds.mysteriousuniverse.org/feed/muplushq/00000000-0000-4000-8000-000000000000" rel="self" type="application/rss+xml" />
+    <link>https://mysteriousuniverse.org</link>
+    <description><![CDATA[desc]]></description>
+    <lastBuildDate>Fri, 04 Sep 2026 09:44:25 +0000</lastBuildDate>
+    <language>en-US</language>
+    <sy:updatePeriod>hourly</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
+    <atom:link rel="hub" href="https://pubsubhubbub.appspot.com/" />
+    <podcast:locked owner="sales@mysteriousuniverse.org">yes</podcast:locked>
+    
+    <itunes:author>8th Kind</itunes:author>
+    <itunes:owner>
+      <itunes:name>8th Kind</itunes:name>
+      <itunes:email>sales@mysteriousuniverse.org</itunes:email>
+    </itunes:owner>
+    <itunes:explicit>yes</itunes:explicit>
+    <itunes:image href="https://mustorage.blob.core.windows.net/images/podcast_assets/MU_Cover2022_plus.jpg" />
+    <managingEditor>sales@mysteriousuniverse.org (8th Kind)</managingEditor>
+    <copyright>8th Kind</copyright>
+    <itunes:subtitle>Mysterious Universe is a weekly podcast featuring fascinatingly strange reports from all over the world.</itunes:subtitle>
+    <itunes:block>Yes</itunes:block>
+    <googleplay:block>yes</googleplay:block>
+    <image>
+      <title>MU Plus+ HQ</title>
+      <url>https://mustorage.blob.core.windows.net/images/podcast_assets/MU_Cover2022_plus.jpg</url>
+      <link>https://mysteriousuniverse.org</link>
+    </image>
+    <itunes:category text="Science">
+      <itunes:category text="Social Sciences" />
+    </itunes:category>
+    <itunes:category text="Religion &amp; Spirituality">
+      <itunes:category text="Spirituality" />
+    </itunes:category>
+    <itunes:category text="Society &amp; Culture">
+      <itunes:category text="Philosophy" />
+    </itunes:category>
+    <googleplay:category text="Science &amp; Medicine" />
+    <rawvoice:subscribe feed="https://feeds.mysteriousuniverse.org/feed/muplushq/00000000-0000-4000-8000-000000000000" itunes="https://feeds.mysteriousuniverse.org/feed/muplushq/00000000-0000-4000-8000-000000000000" />
+    <item>
+      <title>36.09 - MU Podcast - The Strange World of Genius Animals</title>
+      <link>https://mysteriousuniverse.org/2026/09/36.09-MU-Podcast-The-Strange-World-of-Genius-Animals/</link>
+      <pubDate>Thu, 03 Sep 2026 07:03:39 +0000</pubDate>
+      <guid>https://mysteriousuniverse.org/2026/09/36.09-MU-Podcast-The-Strange-World-of-Genius-Animals/</guid>
+      <comments>https://mysteriousuniverse.org/2026/09/36.09-MU-Podcast-The-Strange-World-of-Genius-Animals/#respond</comments>
+      <wfw:commentRss />
+      <slash:comments>0</slash:comments>
+      <description><![CDATA[desc]]></description>
+      
+      <enclosure url="https://traffic.libsyn.com/secure/40igmwokfls/MU_36.09_HQ_njlbhgkrsarg.mp3" length="321956382" type="audio/mpeg" />
+      <itunes:subtitle><![CDATA[Welcome to Mysterious Universe season 36 episode 09! Today we investigate the strange world of genius animals of the most impressive calibre Wizard Pets that earn their keep in life&amp;hellip; and in our hearts. From mathematically inclined K-9s to prophetic pups to......]]></itunes:subtitle>
+      
+      <itunes:author>8th Kind</itunes:author>
+      <itunes:image href="https://mustorage.blob.core.windows.net/images/2026/09/MU_36.09_Square.jpg" />
+      <itunes:season>36</itunes:season>
+      <itunes:episode>9</itunes:episode>
+      <itunes:title>The Strange World of Genius Animals</itunes:title>
+      <itunes:duration>02:14:02</itunes:duration>
+    </item>
+<item>
+      <title>34.09 - MU Plus+ Podcast - The Endless Day</title>
+      <link>https://mysteriousuniverse.org/2026/08/34.09-MU-Plus-Podcast-The-Endless-Day/</link>
+      <pubDate>Mon, 31 Aug 2026 07:49:09 +0000</pubDate>
+      <guid>https://mysteriousuniverse.org/2026/08/34.09-MU-Plus-Podcast-The-Endless-Day/</guid>
+      <comments>https://mysteriousuniverse.org/2026/08/34.09-MU-Plus-Podcast-The-Endless-Day/#respond</comments>
+      <wfw:commentRss />
+      <slash:comments>0</slash:comments>
+      <description><![CDATA[desc]]></description>
+      
+      <enclosure url="https://traffic.libsyn.com/secure/muaddsyn3/MUP_34.09_HQ_bhukjlgrfsk.mp3" length="170863714" type="audio/mpeg" />
+      <itunes:subtitle>Welcome back to Plus+! This week we dig into the machinery behind our sense of time from the biological clocks ticking throughout the body to the strange way the brain stitches separate moments into something resembling a continuous present. Along the way......</itunes:subtitle>
+      
+      <itunes:author>8th Kind</itunes:author>
+      <itunes:image href="https://mustorage.blob.core.windows.net/images/2026/09/MUP_34.09_Square.jpg" />
+      <itunes:season>34</itunes:season>
+      <itunes:episode>9</itunes:episode>
+      <itunes:title>The Endless Day</itunes:title>
+      <itunes:duration>01:11:04</itunes:duration>
+    </item>
+<item>
+      <title>36.08 - MU Podcast - Free-Running | The Human Clock</title>
+      <link>https://mysteriousuniverse.org/2026/08/36.08-MU-Podcast-Free-Running-The-Human-Clock/</link>
+      <pubDate>Thu, 27 Aug 2026 11:39:03 +0000</pubDate>
+      <guid>https://mysteriousuniverse.org/2026/08/36.08-MU-Podcast-Free-Running-The-Human-Clock/</guid>
+      <comments>https://mysteriousuniverse.org/2026/08/36.08-MU-Podcast-Free-Running-The-Human-Clock/#respond</comments>
+      <wfw:commentRss />
+      <slash:comments>0</slash:comments>
+      <description><![CDATA[desc]]></description>
+      
+      <enclosure url="https://traffic.libsyn.com/secure/muaddsyn3/MU_36.08_HQ_hjkgbfrdasklfbshd.mp3" length="384858755" type="audio/mpeg" />
+      <itunes:subtitle><![CDATA[Welcome back to MU! This week we take a look at Why Time Flies by Alan Burdick and find out that even &amp;ldquo;official&amp;rdquo; time is a negotiated average built from clocks around the world. Then we move into the story of Michel......]]></itunes:subtitle>
+      
+      <itunes:author>8th Kind</itunes:author>
+      <itunes:image href="https://mustorage.blob.core.windows.net/images/2026/08/MU_36.08_Square.jpg" />
+      <itunes:season>36</itunes:season>
+      <itunes:episode>8</itunes:episode>
+      <itunes:title>Free-Running | The Human Clock</itunes:title>
+      <itunes:duration>02:40:15</itunes:duration>
+    </item>
+<item>
+      <title>34.08 - MU Plus+ Podcast - The Strange Power of Dreams</title>
+      <link>https://mysteriousuniverse.org/2026/08/34.08-MU-Plus-Podcast-The-Strange-Power-of-Dreams/</link>
+      <pubDate>Mon, 24 Aug 2026 09:02:53 +0000</pubDate>
+      <guid>https://mysteriousuniverse.org/2026/08/34.08-MU-Plus-Podcast-The-Strange-Power-of-Dreams/</guid>
+      <comments>https://mysteriousuniverse.org/2026/08/34.08-MU-Plus-Podcast-The-Strange-Power-of-Dreams/#respond</comments>
+      <wfw:commentRss />
+      <slash:comments>0</slash:comments>
+      <description><![CDATA[desc]]></description>
+      
+      <enclosure url="https://traffic.libsyn.com/secure/40igmwokfls/MUP_34.08_HQ_bnhjgvlrfslnjbg.mp3" length="188614451" type="audio/mpeg" />
+      <itunes:subtitle><![CDATA[Welcome to Mysterious Universe Plus+ Season 34 episode 08. Dreams are a series of images ideas emotions and sensations that happen in your mind during sleep. Some say they are random; some say they are prophetic; some say &amp;ldquo;no confusing picture movies......]]></itunes:subtitle>
+      
+      <itunes:author>8th Kind</itunes:author>
+      <itunes:image href="https://mustorage.blob.core.windows.net/images/2026/08/MUP_34.08_Sqaure.jpg" />
+      <itunes:season>34</itunes:season>
+      <itunes:episode>8</itunes:episode>
+      <itunes:title>The Strange Power of Dreams</itunes:title>
+      <itunes:duration>01:18:30</itunes:duration>
+    </item>
+</channel>
+</rss>

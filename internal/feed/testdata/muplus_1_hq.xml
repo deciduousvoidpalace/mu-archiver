@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">
+  <channel>
+    <title>MU Plus+ Season 1 HQ</title>
+    <atom:link href="https://feeds.mysteriousuniverse.org/feed/muplus/1/hq/00000000-0000-4000-8000-000000000000" rel="self" type="application/rss+xml" />
+    <link>https://mysteriousuniverse.org</link>
+    <description><![CDATA[desc]]></description>
+    <lastBuildDate>Mon, 07 Jun 2010 12:29:37 +0000</lastBuildDate>
+    <language>en-US</language>
+    <sy:updatePeriod>hourly</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
+    <atom:link rel="hub" href="https://pubsubhubbub.appspot.com/" />
+    <podcast:locked owner="sales@mysteriousuniverse.org">yes</podcast:locked>
+    
+    <itunes:author>8th Kind</itunes:author>
+    <itunes:owner>
+      <itunes:name>8th Kind</itunes:name>
+      <itunes:email>sales@mysteriousuniverse.org</itunes:email>
+    </itunes:owner>
+    <itunes:explicit>yes</itunes:explicit>
+    <itunes:image href="https://mustorage.blob.core.windows.net/images/podcast_assets/Season%20Covers/Plus/PlusSeason-1.jpg" />
+    <managingEditor>sales@mysteriousuniverse.org (8th Kind)</managingEditor>
+    <copyright>8th Kind</copyright>
+    <itunes:subtitle>Mysterious Universe is a weekly podcast featuring fascinatingly strange reports from all over the world.</itunes:subtitle>
+    <itunes:block>Yes</itunes:block>
+    <googleplay:block>yes</googleplay:block>
+    <image>
+      <title>MU Plus+ Season 1 HQ</title>
+      <url>https://mustorage.blob.core.windows.net/images/podcast_assets/Season%20Covers/Plus/PlusSeason-1.jpg</url>
+      <link>https://mysteriousuniverse.org</link>
+    </image>
+    <itunes:category text="Science">
+      <itunes:category text="Social Sciences" />
+    </itunes:category>
+    <itunes:category text="Religion &amp; Spirituality">
+      <itunes:category text="Spirituality" />
+    </itunes:category>
+    <itunes:category text="Society &amp; Culture">
+      <itunes:category text="Philosophy" />
+    </itunes:category>
+    <googleplay:category text="Science &amp; Medicine" />
+    <rawvoice:subscribe feed="https://feeds.mysteriousuniverse.org/feed/muplus/1/hq/00000000-0000-4000-8000-000000000000" itunes="https://feeds.mysteriousuniverse.org/feed/muplus/1/hq/00000000-0000-4000-8000-000000000000" />
+    <item>
+      <title>1.25 – MU Plus+ Podcast</title>
+      <link>https://mysteriousuniverse.org/2010/06/episode-125-mysterious-universe-plus/</link>
+      <pubDate>Mon, 07 Jun 2010 12:29:37 +0000</pubDate>
+      <guid>https://mysteriousuniverse.org/2010/06/episode-125-mysterious-universe-plus/</guid>
+      <comments>https://mysteriousuniverse.org/2010/06/episode-125-mysterious-universe-plus/#respond</comments>
+      <wfw:commentRss />
+      <slash:comments>0</slash:comments>
+      <description><![CDATA[desc]]></description>
+      
+      <enclosure url="https://traffic.libsyn.com/40igmwokfls/MUP125__SQ_x.mp3" length="64348385" type="audio/mpeg" />
+      <itunes:subtitle><![CDATA[We wrap up our first season of Plus+ exclusives with a Rocket 'Light Spiral' seen over the Eastern coast of Australia by thousands. We also have European encounters with the Michelin man AKA &quot;Bibendum&quot; along with Voodoo curses UAPs and more hauntings......]]></itunes:subtitle>
+      
+      <itunes:author>8th Kind</itunes:author>
+      <itunes:image href="https://mustorage.blob.core.windows.net/images/2010/06/rodrigoseroiska-643x440.jpg" />
+      <itunes:season>1</itunes:season>
+      <itunes:episode>25</itunes:episode>
+      <itunes:title>MU Plus+ Podcast</itunes:title>
+      <itunes:duration>01:06:45</itunes:duration>
+    </item>
+<item>
+      <title>1.24 – MU Plus+ Podcast</title>
+      <link>https://mysteriousuniverse.org/2010/05/episode-124-mysterious-universe/</link>
+      <pubDate>Mon, 31 May 2010 12:49:46 +0000</pubDate>
+      <guid>https://mysteriousuniverse.org/2010/05/episode-124-mysterious-universe/</guid>
+      <comments>https://mysteriousuniverse.org/2010/05/episode-124-mysterious-universe/#respond</comments>
+      <wfw:commentRss />
+      <slash:comments>0</slash:comments>
+      <description><![CDATA[desc]]></description>
+      
+      <enclosure url="https://traffic.libsyn.com/40igmwokfls/MUP124__SQ_x.mp3" length="55411999" type="audio/mpeg" />
+      <itunes:subtitle>After a warm up discussion on the recent plagues in Greece and experiments on meth addicted snails we delve into ancient civilizations and their out of place artifacts. 300 million year old metal tools and sandled footprints on top of extinct arthropods......</itunes:subtitle>
+      
+      <itunes:author>8th Kind</itunes:author>
+      <itunes:image href="https://mustorage.blob.core.windows.net/images/2010/05/Explored-643x440.jpg" />
+      <itunes:season>1</itunes:season>
+      <itunes:episode>24</itunes:episode>
+      <itunes:title>MU Plus+ Podcast</itunes:title>
+      <itunes:duration>00:57:26</itunes:duration>
+    </item>
+<item>
+      <title>1.23 – MU Plus+ Podcast</title>
+      <link>https://mysteriousuniverse.org/2010/05/episode-123-mysterious-universe-plus/</link>
+      <pubDate>Sun, 23 May 2010 04:42:53 +0000</pubDate>
+      <guid>https://mysteriousuniverse.org/2010/05/episode-123-mysterious-universe-plus/</guid>
+      <comments>https://mysteriousuniverse.org/2010/05/episode-123-mysterious-universe-plus/#respond</comments>
+      <wfw:commentRss />
+      <slash:comments>0</slash:comments>
+      <description><![CDATA[desc]]></description>
+      
+      <enclosure url="https://traffic.libsyn.com/40igmwokfls/MUP123__SQ_x.mp3" length="80256284" type="audio/mpeg" />
+      <itunes:subtitle><![CDATA[We have a very special Plus+ Exclusive this week as we interview abductee David Eckhart and discover his decade long interactions with multiple ET visitors. David recounts moments of missing time physical Alien operations traveling through &quot;Stargates&quot; genetic manipulation and much much......]]></itunes:subtitle>
+      
+      <itunes:author>8th Kind</itunes:author>
+      <itunes:image href="https://mustorage.blob.core.windows.net/images/2010/05/eckhart-643x440.jpg" />
+      <itunes:season>1</itunes:season>
+      <itunes:episode>23</itunes:episode>
+      <itunes:title>MU Plus+ Podcast</itunes:title>
+      <itunes:duration>01:23:19</itunes:duration>
+    </item>
+</channel>
+</rss>

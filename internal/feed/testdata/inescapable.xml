@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">
+  <channel>
+    <title>Inescapable</title>
+    <atom:link href="https://feeds.mysteriousuniverse.org/feed/inescapable/00000000-0000-4000-8000-000000000000" rel="self" type="application/rss+xml" />
+    <link>https://mysteriousuniverse.org</link>
+    <description><![CDATA[desc]]></description>
+    <lastBuildDate>Tue, 12 May 2026 09:14:43 +0000</lastBuildDate>
+    <language>en-US</language>
+    <sy:updatePeriod>hourly</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
+    <atom:link rel="hub" href="https://pubsubhubbub.appspot.com/" />
+    <podcast:locked owner="sales@mysteriousuniverse.org">yes</podcast:locked>
+    
+    <itunes:author>8th Kind</itunes:author>
+    <itunes:owner>
+      <itunes:name>8th Kind</itunes:name>
+      <itunes:email>contact@inescapablepodcast.com</itunes:email>
+    </itunes:owner>
+    <itunes:explicit>yes</itunes:explicit>
+    <itunes:image href="https://mustorage.blob.core.windows.net/images/2026/01/inescapable-cover_final_web1400.jpg" />
+    <managingEditor>contact@inescapablepodcast.com (8th Kind)</managingEditor>
+    <copyright>8th Kind</copyright>
+    <itunes:subtitle><![CDATA[A show about the forces you can't escape — spiritual, political, psychological, natural, and everything in between.]]></itunes:subtitle>
+    <itunes:block>Yes</itunes:block>
+    <googleplay:block>yes</googleplay:block>
+    <image>
+      <title>Inescapable</title>
+      <url>https://mustorage.blob.core.windows.net/images/2026/01/inescapable-cover_final_web1400.jpg</url>
+      <link>https://mysteriousuniverse.org</link>
+    </image>
+    <itunes:category text="Science">
+      <itunes:category text="Social Sciences" />
+    </itunes:category>
+    <itunes:category text="Religion &amp; Spirituality">
+      <itunes:category text="Spirituality" />
+    </itunes:category>
+    <itunes:category text="Society &amp; Culture">
+      <itunes:category text="Philosophy" />
+    </itunes:category>
+    <googleplay:category text="Science &amp; Medicine" />
+    <rawvoice:subscribe feed="https://feeds.mysteriousuniverse.org/feed/inescapable/00000000-0000-4000-8000-000000000000" itunes="https://feeds.mysteriousuniverse.org/feed/inescapable/00000000-0000-4000-8000-000000000000" />
+    <item>
+      <title>1.14 - Inescapable Podcast - The Finale</title>
+      <link>https://mysteriousuniverse.org/2026/05/1.14-Inescapable-Podcast-The-Finale/</link>
+      <pubDate>Tue, 12 May 2026 09:17:48 +0000</pubDate>
+      <guid>https://mysteriousuniverse.org/2026/05/1.14-Inescapable-Podcast-The-Finale/</guid>
+      <comments>https://mysteriousuniverse.org/2026/05/1.14-Inescapable-Podcast-The-Finale/#respond</comments>
+      <wfw:commentRss />
+      <slash:comments>0</slash:comments>
+      <description><![CDATA[desc]]></description>
+      
+      <enclosure url="https://episodes.castos.com/6968aa7bd4d8a4-42661974/2460668/c1e-vmjdvf5kwwmc9q4gv-258ovjrwu7wr-qavgpj.mp3" length="30599063" type="audio/mpeg" />
+      <itunes:subtitle>I know this is not the episode you wanted but some of you may have sensed this coming. This is our last episode. We both need time away to figure out if the passion is still there. When we wrapped up Mysterious......</itunes:subtitle>
+      
+      <itunes:author>8th Kind</itunes:author>
+      <itunes:image href="https://mustorage.blob.core.windows.net/images/2026/05/1.13-finale-Cover.jpg" />
+      <itunes:season>1</itunes:season>
+      <itunes:episode>27</itunes:episode>
+      <itunes:title>The Finale</itunes:title>
+      <itunes:duration>00:12:40</itunes:duration>
+    </item>
+<item>
+      <title>1.13 - Inescapable Podcast - Cheat, Lie, Win</title>
+      <link>https://mysteriousuniverse.org/2026/05/1.13-Inescapable-Podcast-Cheat-Lie-Win/</link>
+      <pubDate>Fri, 08 May 2026 06:14:42 +0000</pubDate>
+      <guid>https://mysteriousuniverse.org/2026/05/1.13-Inescapable-Podcast-Cheat-Lie-Win/</guid>
+      <comments>https://mysteriousuniverse.org/2026/05/1.13-Inescapable-Podcast-Cheat-Lie-Win/#respond</comments>
+      <wfw:commentRss />
+      <slash:comments>0</slash:comments>
+      <description><![CDATA[desc]]></description>
+      
+      <enclosure url="https://episodes.castos.com/6968aa7bd4d8a4-42661974/2457288/c1e-ox9m0fjx30rhpmo1n-4744n2m9hxkd-akihxj.mp3" length="323995930" type="audio/mpeg" />
+      <itunes:subtitle>WATCH THE VIDEO A cruise ship leaves Argentina on April 1st with a hantavirus outbreak on board.A cruise ship leaves Argentina on April 1st with a hantavirus outbreak on board. Three passengers are dead the ship is stuck in Cape Verde and......</itunes:subtitle>
+      
+      <itunes:author>8th Kind</itunes:author>
+      <itunes:image href="https://mustorage.blob.core.windows.net/images/2026/05/113_cover.jpg" />
+      <itunes:season>1</itunes:season>
+      <itunes:episode>25</itunes:episode>
+      <itunes:title>Cheat, Lie, Win</itunes:title>
+      <itunes:duration>02:14:55</itunes:duration>
+    </item>
+<item>
+      <title>1.12 - Inescapable Plus+ Podcast - Fancy Dress Betrayal</title>
+      <link>https://mysteriousuniverse.org/2026/05/1.12-Inescapable-Plus-Podcast-Fancy-Dress-Betrayal/</link>
+      <pubDate>Tue, 05 May 2026 06:02:06 +0000</pubDate>
+      <guid>https://mysteriousuniverse.org/2026/05/1.12-Inescapable-Plus-Podcast-Fancy-Dress-Betrayal/</guid>
+      <comments>https://mysteriousuniverse.org/2026/05/1.12-Inescapable-Plus-Podcast-Fancy-Dress-Betrayal/#respond</comments>
+      <wfw:commentRss />
+      <slash:comments>0</slash:comments>
+      <description><![CDATA[desc]]></description>
+      
+      <enclosure url="https://episodes.castos.com/6968aa7bd4d8a4-42661974/2454239/c1e-ox9m0fjx5d6hv1jgm-dmj17g2qbvvj-mkpmv5.mp3" length="258288291" type="audio/mpeg" />
+      <itunes:subtitle>WATCH THE VIDEO We tried to do a fun episode. No politics. Just good vibes Star Wars chat maybe some laughs. Simple plan. One of us showed up in fancy dress. The other did not. From there it became pretty clear that......</itunes:subtitle>
+      
+      <itunes:author>8th Kind</itunes:author>
+      <itunes:image href="https://mustorage.blob.core.windows.net/images/2026/05/112_plus_cover.jpg" />
+      <itunes:season>1</itunes:season>
+      <itunes:episode>24</itunes:episode>
+      <itunes:title>Fancy Dress Betrayal</itunes:title>
+      <itunes:duration>01:47:34</itunes:duration>
+    </item>
+<item>
+      <title>1.12 - Inescapable Podcast - Trust Collapse</title>
+      <link>https://mysteriousuniverse.org/2026/05/1.12-Inescapable-Podcast-Trust-Collapse/</link>
+      <pubDate>Fri, 01 May 2026 07:18:59 +0000</pubDate>
+      <guid>https://mysteriousuniverse.org/2026/05/1.12-Inescapable-Podcast-Trust-Collapse/</guid>
+      <comments>https://mysteriousuniverse.org/2026/05/1.12-Inescapable-Podcast-Trust-Collapse/#respond</comments>
+      <wfw:commentRss />
+      <slash:comments>0</slash:comments>
+      <description><![CDATA[desc]]></description>
+      
+      <enclosure url="https://episodes.castos.com/6968aa7bd4d8a4-42661974/2443044/c1e-0oxk0t7m5qzb0wxo3-mk9w3vk9c1mp-ryjn1e.mp3" length="336928935" type="audio/mpeg" />
+      <itunes:subtitle><![CDATA[Something has shifted. Content creators are burning out Australians are stuck in survival mode and a Victorian-era melancholy has settled over the West. We get into why. India has overtaken England as Australia's biggest source of migrants and questions of cohesion identity......]]></itunes:subtitle>
+      
+      <itunes:author>8th Kind</itunes:author>
+      <itunes:image href="https://mustorage.blob.core.windows.net/images/2026/05/112_cover.jpg" />
+      <itunes:season>1</itunes:season>
+      <itunes:episode>23</itunes:episode>
+      <itunes:title>Trust Collapse</itunes:title>
+      <itunes:duration>02:20:17</itunes:duration>
+    </item>
+</channel>
+</rss>

@@ -1,0 +1,19 @@
+# build output
+/mu-dl
+/mu-dl-linux-amd64
+/mu-archiver
+*.exe
+
+# downloaded media (never commit podcast archives)
+/MysteriousUniverse/
+*.mp3
+*.m4a
+*.part
+
+# local config / session (may contain credentials + tokens)
+config.json
+cookies.json
+
+# editor / OS cruft
+.DS_Store
+*.swp
