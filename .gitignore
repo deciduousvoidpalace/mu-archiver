@@ -3,6 +3,7 @@
 /mu-dl-linux-amd64
 /mu-archiver
 *.exe
+/dist/
 
 # downloaded media (never commit podcast archives)
 /MysteriousUniverse/

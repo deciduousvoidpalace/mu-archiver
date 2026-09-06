@@ -9,7 +9,7 @@ Two front-ends share one engine:
 
 | Binary | What it is |
 |---|---|
-| `mu-archiver` | Desktop app for Linux (built and tested for **KDE Plasma on x86-64**). Tray icon, notifications, background checks, live rate-limit sliders. |
+| `mu-archiver` | Desktop app. Built and tested for **KDE Plasma on x86-64 Linux**; Windows and macOS builds are on the Releases page. Tray icon, notifications, background checks, live rate-limit sliders. |
 | `mu-dl` | Command-line archiver. Static binary, no dependencies. Scriptable; has a `watch` mode. |
 
 Both work through the *same personal RSS feeds the site hands to any podcast
@@ -52,7 +52,26 @@ polite.
   re-checking for new episodes on a schedule and notifying you when something
   new is archived.
 
-## Install
+## Download
+
+Prebuilt builds for Linux, Windows and macOS are on the
+[Releases page](https://github.com/deciduousvoidpalace/mu-archiver/releases).
+Each archive contains the desktop app, the `mu-dl` command-line tool, this
+README and the licence.
+
+| Platform | Archive | After unpacking |
+|---|---|---|
+| Linux x86-64 | `mu-archiver_<version>_linux_amd64.tar.gz` | `./install.sh` installs to `~/.local` and adds the menu entry (`./install.sh --uninstall` removes it again), or just run `./mu-archiver`. Needs glibc 2.34+ (Ubuntu 22.04, Debian 12, Fedora 35 or newer). |
+| Windows 10/11 x86-64 | `mu-archiver_<version>_windows_amd64.zip` | Run `mu-archiver.exe`. The build is not code-signed, so SmartScreen may show "Windows protected your PC": *More info → Run anyway*. |
+| macOS 11+ (Apple silicon and Intel) | `mu-archiver_<version>_macos_universal.zip` | Drag `MU Archiver.app` to Applications. The app is not notarised: if macOS refuses to open it, use *System Settings → Privacy & Security → Open Anyway*, or run `xattr -dr com.apple.quarantine "/Applications/MU Archiver.app"`. |
+
+The Windows and macOS builds are provided as-is: the tray and notification
+integration is tested on KDE Plasma, and the *Launch at login* switch only
+works on Linux (XDG autostart). Releases are built by the
+[GitHub Actions workflow](.github/workflows/release.yml) from a `v*` tag, and
+the `SHA256SUMS` asset lists the archive checksums.
+
+## Build from source
 
 ### Build dependencies
 

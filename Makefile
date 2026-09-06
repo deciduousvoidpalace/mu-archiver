@@ -5,6 +5,7 @@
 #   make gui        desktop app (needs the GUI dev packages, see README)
 #   make install    install binaries, .desktop entry and icon for this user
 #   make test       run the unit tests
+#   make dist-linux release tarball in dist/ (Windows/macOS: see packaging/release/)
 #
 VERSION  := 2.0.0
 PREFIX   ?= $(HOME)/.local
@@ -14,7 +15,7 @@ GOFLAGS  := -trimpath
 GOOS     ?= linux
 GOARCH   ?= amd64
 
-.PHONY: all cli gui build linux install uninstall test vet fmt clean icons deps-debian deps-fedora deps-arch
+.PHONY: all cli gui build linux install uninstall test vet fmt clean icons winres dist-linux deps-debian deps-fedora deps-arch
 
 all: cli gui
 
@@ -71,8 +72,21 @@ fmt:
 icons:
 	go generate ./internal/assets
 
+# Windows resources (icon, version info, GUI manifest) linked into mu-archiver.exe
+# by "go build" for windows/amd64. The .syso is committed; regenerate it after
+# changing the icon or VERSION.
+winres:
+	go run github.com/tc-hib/go-winres@v0.3.3 simply --arch amd64 --out cmd/mu-archiver/rsrc --manifest gui \
+	  --icon internal/assets/icon.png --product-name "MU Archiver" --file-description "MU Archiver" \
+	  --product-version $(VERSION) --file-version $(VERSION) --original-filename mu-archiver.exe --copyright "CC0 1.0 Universal"
+
+# Release tarball for Linux; the GitHub workflow (.github/workflows/release.yml)
+# runs this plus the Windows and macOS scripts in packaging/release/.
+dist-linux:
+	packaging/release/build-linux.sh $(VERSION)
+
 clean:
-	rm -f mu-dl mu-dl-linux-amd64 mu-archiver
+	rm -rf mu-dl mu-dl-linux-amd64 mu-archiver dist
 
 # Build dependencies for the GUI (OpenGL / X11 / Wayland headers)
 deps-debian:

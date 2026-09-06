@@ -1,0 +1,157 @@
+# Builds MU Archiver for Linux, Windows and macOS on every push to main, and
+# publishes a GitHub Release with the three archives when a v* tag is pushed:
+#
+#   git tag v2.0.0 && git push origin v2.0.0
+#
+# The GUI needs a C toolchain per platform (Fyne/GLFW), so each platform is
+# built natively on its own runner. Packaging logic lives in packaging/release/.
+name: Build and release
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  linux:
+    name: Linux (x86-64)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - name: Install GUI build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc libgl1-mesa-dev xorg-dev libxkbcommon-dev libwayland-dev wayland-protocols
+      - run: go vet ./...
+      - run: go test ./...
+      - name: Version
+        id: v
+        shell: bash
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then v="${GITHUB_REF#refs/tags/v}"; else v="0.0.0-dev.${GITHUB_SHA::7}"; fi
+          echo "version=$v" >> "$GITHUB_OUTPUT"
+      - name: Build release tarball
+        run: bash packaging/release/build-linux.sh "${{ steps.v.outputs.version }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linux-amd64
+          path: dist/*.tar.gz
+          if-no-files-found: error
+
+  windows:
+    name: Windows (x86-64)
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - name: C toolchain
+        run: gcc --version
+      - name: Tests (informational)
+        continue-on-error: true
+        run: go test ./...
+      - name: Version
+        id: v
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then v="${GITHUB_REF#refs/tags/v}"; else v="0.0.0-dev.${GITHUB_SHA::7}"; fi
+          echo "version=$v" >> "$GITHUB_OUTPUT"
+      - name: Build
+        run: bash packaging/release/build-windows.sh "${{ steps.v.outputs.version }}"
+      - name: Zip
+        shell: pwsh
+        run: |
+          $name = "mu-archiver_${{ steps.v.outputs.version }}_windows_amd64"
+          Compress-Archive -Path "dist/stage/$name" -DestinationPath "dist/$name.zip"
+          Get-ChildItem dist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-amd64
+          path: dist/*.zip
+          if-no-files-found: error
+
+  macos:
+    name: macOS (universal)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - name: Tests (informational)
+        continue-on-error: true
+        run: go test ./...
+      - name: Version
+        id: v
+        shell: bash
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then v="${GITHUB_REF#refs/tags/v}"; else v="0.0.0-dev.${GITHUB_SHA::7}"; fi
+          echo "version=$v" >> "$GITHUB_OUTPUT"
+      - name: Build universal app bundle
+        run: bash packaging/release/build-macos.sh "${{ steps.v.outputs.version }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: macos-universal
+          path: dist/*.zip
+          if-no-files-found: error
+
+  release:
+    name: Publish GitHub release
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [linux, windows, macos]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+      - name: Checksums
+        run: |
+          cd dist
+          sha256sum * > SHA256SUMS
+          cat SHA256SUMS
+      - name: Release notes
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          V="${TAG#v}"
+          cat > notes.md <<NOTES
+          Desktop tray app (\`mu-archiver\`) and command-line tool (\`mu-dl\`) for archiving the podcast feeds of a Mysterious Universe subscription. Every archive below contains both programs plus the README and licence.
+
+          | Platform | Download | First launch |
+          |---|---|---|
+          | Linux x86-64 | \`mu-archiver_${V}_linux_amd64.tar.gz\` | Unpack and run \`./install.sh\` (installs to \`~/.local\` and adds the application-menu entry), or just run \`./mu-archiver\`. Needs glibc 2.34+ (Ubuntu 22.04, Debian 12, Fedora 35 or newer) and the usual desktop libraries (OpenGL, X11, xkbcommon). |
+          | Windows 10/11 x86-64 | \`mu-archiver_${V}_windows_amd64.zip\` | Unpack anywhere and run \`mu-archiver.exe\`. The build is not code-signed, so SmartScreen may show "Windows protected your PC": click *More info → Run anyway*. |
+          | macOS 11+ (Apple silicon and Intel) | \`mu-archiver_${V}_macos_universal.zip\` | Drag \`MU Archiver.app\` to Applications. The app is not notarised: if macOS refuses to open it, go to *System Settings → Privacy & Security* and click *Open Anyway*, or run \`xattr -dr com.apple.quarantine "/Applications/MU Archiver.app"\`. |
+
+          Settings, session and feed cache live in \`~/.config/mu-dl\` on every platform; downloads go to \`~/Podcasts/Mysterious Universe\` by default. \`mu-dl --help\` lists the command-line options.
+
+          Known limitations: the *Launch at login* switch only works on Linux (XDG autostart). The tray and notification integration is tested on KDE Plasma; the Windows and macOS builds are provided as-is and are unsigned.
+
+          \`SHA256SUMS\` lists the checksums of the archives. Built by GitHub Actions from tag \`${TAG}\`.
+          NOTES
+          cat notes.md
+      - name: Create or update the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          V="${TAG#v}"
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" --clobber dist/*
+          else
+            gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --verify-tag --title "MU Archiver $V" --notes-file notes.md dist/*
+          fi
