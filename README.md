@@ -12,6 +12,8 @@ Two front-ends share one engine:
 | `mu-archiver` | Desktop app. Built and tested for **KDE Plasma on x86-64 Linux**; Windows and macOS builds are on the Releases page. Tray icon, notifications, background checks, live rate-limit sliders. |
 | `mu-dl` | Command-line archiver. Static binary, no dependencies. Scriptable; has a `watch` mode. |
 
+![MU Archiver overview: catalogue stats, progress, active downloads and live rate-limit sliders](docs/screenshots/overview.png)
+
 Both work through the *same personal RSS feeds the site hands to any podcast
 app*, so they only ever touch content your subscription already includes.
 Downloads are for **personal, offline use** — respect the site's
@@ -51,6 +53,18 @@ polite.
 - **Background mode.** Close the window and it keeps running in the tray,
   re-checking for new episodes on a schedule and notifying you when something
   new is archived.
+
+## Screenshots
+
+The library with archived, downloading and pending episodes side by side, the
+settings page, and the activity log. (Demo data from a local stand-in for the
+site: the account, plan, episode titles and sizes are synthetic.)
+
+| Library | Settings |
+|---|---|
+| ![Library page](docs/screenshots/library.png) | ![Settings page](docs/screenshots/settings.png) |
+
+![Activity log](docs/screenshots/activity.png)
 
 ## Download
 
