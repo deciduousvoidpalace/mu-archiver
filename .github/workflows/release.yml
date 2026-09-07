@@ -21,15 +21,21 @@ jobs:
   linux:
     name: Linux (x86-64)
     runs-on: ubuntu-latest
+    # Built inside Ubuntu 22.04 so the binary links against glibc 2.35 and runs
+    # on any distribution from 2022 on (ubuntu-latest would require 2.38).
+    container: ubuntu:22.04
+    env:
+      DEBIAN_FRONTEND: noninteractive
     steps:
+      - name: Install toolchain and GUI build dependencies
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends ca-certificates git gcc libc6-dev make tar gzip \
+            libgl1-mesa-dev xorg-dev libxkbcommon-dev libwayland-dev wayland-protocols
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
-      - name: Install GUI build dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y gcc libgl1-mesa-dev xorg-dev libxkbcommon-dev libwayland-dev wayland-protocols
       - run: go vet ./...
       - run: go test ./...
       - name: Version
@@ -152,6 +158,7 @@ jobs:
           V="${TAG#v}"
           if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
             gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" --clobber dist/*
+            gh release edit "$TAG" --repo "$GITHUB_REPOSITORY" --title "MU Archiver $V" --notes-file notes.md
           else
             gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --verify-tag --title "MU Archiver $V" --notes-file notes.md dist/*
           fi
